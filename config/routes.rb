@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'searches/search'
   get 'relationships/create'
   get 'relationships/destroy'
+  get "search" => "searches#search"
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
